@@ -1,4 +1,5 @@
 # 0. Final assignment
+*Note that the tidy data at the end of this script is stored both in wide and in narrow.*
 ## 1. Introduction
 
 This file describes how the run analysis.R script works. The description is structured into seven main steps. Two of these steps are prerequisites. These prerequisites are:
