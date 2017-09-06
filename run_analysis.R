@@ -83,3 +83,6 @@ tidy_data_wide <- extr_df %>%
 tidy_data_narrow <- tidy_data_wide %>%
         melt(id = c("subject", "activity"), variable.name = "feature") %>% 
         arrange(subject, activity)
+
+#write file output
+write.table(tidy_data_narrow, file = "datafile.txt", row.name = FALSE)
