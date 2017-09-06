@@ -14,9 +14,10 @@ if(!require(reshape2)){
         library(reshape2)
 }
 
-#Assignment instructions assume that we have data file in wd
 #Unzip and load relevant files into data frames
-unzip("S4data.zip")
+list.files() %>% 
+        grep("*.zip$", ., value=TRUE) %>%
+        unzip
 
 x_test <- "./UCI HAR Dataset/test/X_test.txt" %>% 
         read.csv(sep = "", header = FALSE) %>% 
